@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: local-file
+    tables:
+      - name: conference-hall
+        meta:
+          external_location: "read_json_auto('seeds/conference-hall/conference-hall.json')" 
+      - name: billet-web
+        meta:
+          external_location: "read_csv('seeds/billet-web/billet-web.csv', header=true, auto_detect=true)"

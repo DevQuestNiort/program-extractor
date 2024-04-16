@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "devquest-dbt"
+version = "0.1.0"
+description = ""
+authors = ["glefloch <glfloch@gmail.com>"]
+readme = "README.md"
+packages = [{include = "devquest_dbt"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dbt = "^1.0.0.36.9"
+dbt-duckdb = "^1.7.2"
+nicegui = "^1.4.17"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
+sqlfluff = "^2.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

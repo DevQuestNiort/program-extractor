@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_categorie
+    description: Contient toutes les catégories possible
+
+  - name: stg_format
+    description: Contient tous les formats

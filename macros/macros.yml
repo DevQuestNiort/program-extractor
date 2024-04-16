@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: extract_email_domain
+    arguments:
+      - name: email_column_name
+        type: email column Name
+        description: "The name of a column, or an expression — anything that can be `select`-ed as a column"
+  - name: export_to_json
+    arguments:
+      - name: table
+        type: name of the table to export

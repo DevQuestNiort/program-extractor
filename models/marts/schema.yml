@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_categorie
+    description: Répartition des talks par catégories
+    columns:
+      - name: name
+        description: Nom de la catégorie
+        tests:
+          - not_null
+          - unique
+      - name: count
+        description: Nombre de talks dans cette catégorie
+        tests:
+          - not_null
+      - name: repartition
+        description: Repartition par rapport à l'ensemble des talks
+        tests: 
+          - not_null
